@@ -1,51 +1,96 @@
+# Soccer Shot Data Analyzer
 
-This Python script is designed to scrape and analyze soccer shot data from the SofaScore website using the SofaScore API. It provides insights into shots taken during specific matches and visualizes player-specific shot data.\
-\
-## Prerequisites\
-\
-Ensure that you have the required Python packages installed:\
-\
-pip install requests beautifulsoup4 pandas numpy matplotlib mplsoccer\
-\
-1. Clone the repository or download the script file.\
-2. Run the script using a Python interpreter.\
-3. Follow the prompts to enter match numbers and player names.\
-4. View the scraped shot data and visualizations.\
-\
-## Code Structure\
-\
-The script consists of the following sections:\
-\
-1. Scraping SofaScore API:\
-   - Uses the `requests` library to fetch shot data for specific matches from the SofaScore API.\
-   - Extracts relevant information such as player name, shot type, situation, coordinates, xG, and more.\
-\
-2. Creating DataFrames:\
-   - Utilizes the `pandas` library to organize the scraped shot data into structured DataFrames.\
-   - Displays the DataFrame containing shot details for each match.\
-\
-3. Visualizing Shot Data:\
-   - Integrates the `mplsoccer` library to visualize shots on a soccer pitch.\
-   - Allows users to input a player's name and displays a pitch plot with different shot types color-coded.\
-\
-4. Additional Analysis:\
-   - Computes and visualizes average xG and xGOT for players.\
-   - Ranks players based on xG and xGOT, displaying top players in horizontal bar charts.\
-\
-## Customization\
-\
-Feel free to customize the script for your specific needs. You can adjust the match numbers, explore additional player statistics, or modify visualization parameters.\
-\
-## Acknowledgments\
-\
-- [SofaScore API](https://www.sofascore.com/)\
-- Libraries used: `requests`, `beautifulsoup4`, `pandas`, `numpy`, `matplotlib`, `mplsoccer`\
-\
-## License\
-\
-Not authorised by the website to share data.\
-\
-## Notes\
-\
-- Ensure compliance with SofaScore's terms of service and API usage policies.\
-- This script is intended for educational and analytical purposes.}
+This Python script scrapes and analyzes soccer shot data from the SofaScore website using their unofficial API. It provides insights into shots taken during specific matches and visualizes player-specific shot data on a soccer pitch.
+
+---
+
+## 📦 Prerequisites
+
+Make sure the following Python packages are installed:
+
+```bash
+pip install requests beautifulsoup4 pandas numpy matplotlib mplsoccer
+🚀 Getting Started
+Clone or download the repository.
+
+Run the script using any Python interpreter.
+
+Follow the prompts to enter match numbers and player names.
+
+View the scraped data and visualizations.
+
+🧠 Features & Code Structure
+1. Scraping SofaScore API
+Uses the requests library to fetch shot data for selected matches.
+
+Extracts:
+
+Player name
+
+Shot type
+
+Match situation
+
+Coordinates
+
+xG (expected goals)
+
+xGOT (expected goals on target)
+
+2. Creating DataFrames
+Uses pandas to create a clean DataFrame of all relevant shot data.
+
+Each match’s shots are neatly structured for further analysis.
+
+3. Visualizing Shot Data
+mplsoccer is used to draw a pitch and overlay shots.
+
+Different shot outcomes (goals, misses, saves, etc.) are color-coded.
+
+You can input a player’s name to isolate and visualize their shots.
+
+🖼️ Example: Overall Goals Plot
+
+📊 Example: Shots per Player (Bar Chart)
+
+⚽ Example: All Shots by Ollie Watkins
+
+4. Additional Analysis
+Calculates average xG and xGOT values.
+
+Ranks players based on shot quality and outputs leaderboard-style charts.
+
+⚙️ Customization
+This script is modular—feel free to:
+
+Change match numbers to track different games.
+
+Extend the scraping logic to include assists or heatmaps.
+
+Modify chart colors or pitch settings using mplsoccer.
+
+📚 Acknowledgments
+SofaScore for match data.
+
+Libraries used:
+
+requests
+
+beautifulsoup4
+
+pandas
+
+numpy
+
+matplotlib
+
+mplsoccer
+
+🔐 License & Disclaimer
+This project is intended for educational and analytical purposes only.
+
+Respect SofaScore’s terms of service.
+
+The developer is not affiliated with SofaScore.
+
+Do not use this for commercial data scraping or public sharing of scraped datasets.
