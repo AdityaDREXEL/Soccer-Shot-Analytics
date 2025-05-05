@@ -59,6 +59,9 @@ Each match’s shots are neatly structured for further analysis.
 - Color-coded by result (goal, miss, save, block, post).
 - You can input a player’s name to filter shots.
 
+![Soccer Shot Analytics](./WatkinsEg.png)
+![Soccer Shot Analytics](./GoalPlot.png)
+
 ---
 
 ## Acknowledgments
