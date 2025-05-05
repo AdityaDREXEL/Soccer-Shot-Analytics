@@ -4,13 +4,13 @@ This Python script scrapes and analyzes soccer shot data from the SofaScore webs
 
 ---
 
-## 📦 Prerequisites
+## Prerequisites
 
 Make sure the following Python packages are installed:
 
 ```bash
 pip install requests beautifulsoup4 pandas numpy matplotlib mplsoccer
-🚀 Getting Started
+Getting Started
 Clone or download the repository.
 
 Run the script using any Python interpreter.
@@ -19,7 +19,7 @@ Follow the prompts to enter match numbers and player names.
 
 View the scraped data and visualizations.
 
-🧠 Features & Code Structure
+Features and Code Structure
 1. Scraping SofaScore API
 Uses the requests library to fetch shot data for selected matches.
 
@@ -36,6 +36,7 @@ Coordinates
 xG (expected goals)
 
 xGOT (expected goals on target)
+![Soccer-Shot-Analytics](./NoOfShots.png)
 
 2. Creating DataFrames
 Uses pandas to create a clean DataFrame of all relevant shot data.
@@ -43,33 +44,33 @@ Uses pandas to create a clean DataFrame of all relevant shot data.
 Each match’s shots are neatly structured for further analysis.
 
 3. Visualizing Shot Data
-mplsoccer is used to draw a pitch and overlay shots.
+Uses mplsoccer to draw a pitch and overlay player shots.
 
-Different shot outcomes (goals, misses, saves, etc.) are color-coded.
+Color-codes different shot outcomes (goals, misses, saves, etc.).
 
-You can input a player’s name to isolate and visualize their shots.
+Allows filtering by player name.
 
-🖼️ Example: Overall Goals Plot
+Example: Overall Goals Plot
 
-📊 Example: Shots per Player (Bar Chart)
+Example: Shots per Player (Bar Chart)
 
-⚽ Example: All Shots by Ollie Watkins
+Example: Shots by Ollie Watkins
 
 4. Additional Analysis
-Calculates average xG and xGOT values.
+Calculates average xG and xGOT per player.
 
-Ranks players based on shot quality and outputs leaderboard-style charts.
+Ranks players based on shot quality and visualizes the top performers.
 
-⚙️ Customization
-This script is modular—feel free to:
+Customization
+This script is modular and easy to extend. You can:
 
-Change match numbers to track different games.
+Adjust match numbers to analyze different games.
 
-Extend the scraping logic to include assists or heatmaps.
+Extend the scraping logic to include other stats (e.g., assists).
 
-Modify chart colors or pitch settings using mplsoccer.
+Modify visual styling using mplsoccer.
 
-📚 Acknowledgments
+Acknowledgments
 SofaScore for match data.
 
 Libraries used:
@@ -86,11 +87,15 @@ matplotlib
 
 mplsoccer
 
-🔐 License & Disclaimer
+License and Disclaimer
 This project is intended for educational and analytical purposes only.
 
 Respect SofaScore’s terms of service.
 
 The developer is not affiliated with SofaScore.
 
-Do not use this for commercial data scraping or public sharing of scraped datasets.
+Do not use this for commercial data scraping or redistribution.
+
+yaml
+Copy
+Edit
